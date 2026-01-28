@@ -20,8 +20,8 @@ public class Total_bill_dc {
         System.out.println("Enter number of drinks:");
         drinks= sc.nextInt();
 
-        double starterprice= 5 ;
-        double main_courseprice= 10;
+        double starterprice= 5.00 ;
+        double main_courseprice= 10.00;
         double dessertprice= 4.50;
         double drinksprice=2.50;
 
@@ -35,18 +35,16 @@ public class Total_bill_dc {
 
         System.out.println("TOTAL BILL :"+total);
 
-        if(total>=50){
-             double discounttotal=total-0.90;
-
-            System.out.println("Discount Available 10% :"+discounttotal);
-        }
-       else if ( dessert>1 && main_course>1) {
+        if ( dessert>0 && main_course>0) {
             double senddiscount=total-0.80;
             System.out.println("Discount Available 20% :"+senddiscount);
-            }
-        else {
-            System.out.println("Thank's for coming ");
         }
+
+        if(total>=50){
+             double discounttotal=total-0.90;
+            System.out.println("Discount Availabl1" +discounttotal);
+        }
+
     }
 
 }

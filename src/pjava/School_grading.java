@@ -21,7 +21,7 @@ public class School_grading {
             System.out.println("YOUR GRAD IS C");
         }
         else if (a>=60 && a<=80){
-            System.out.println("YOUR GRAD IS E");
+            System.out.println("YOUR GRAD IS b");
         }
         else if (a>=90 && a<=100){
             System.out.println("YOUR GRAD IS A");
